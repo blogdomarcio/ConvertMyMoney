@@ -28,12 +28,15 @@ app.get('/', async(req, res) => {
 
         dolar = response.data.results.currencies.USD.buy.toString()
 
-        res.render('index', { dolar })
+        res.render('index', { dolar: convert.toMoney(dolar) })
 
-    } catch {
+        return response
 
-        dolar = null
-        res.render('index', { dolar })
+    } catch (err) {
+
+        console.log(err)
+
+        res.render('index', { dolar: null })
 
     }
 
