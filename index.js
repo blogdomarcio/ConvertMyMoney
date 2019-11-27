@@ -30,13 +30,6 @@ app.get('/', async(req, res) => {
 
     //     res.render('index', { dolar })
 
-    // const response = request.get('https://api.hgbrasil.com/finance')
-    // console.log(response)
-
-    // dolar = JSON.stringify(response.data.results.currencies.USD.buy)
-
-    // res.render('index', { dolar })
-
     // } catch {
 
     dolar = null
