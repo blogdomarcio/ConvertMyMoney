@@ -8,7 +8,7 @@ const path = require('path')
 
 const convert = require('./lib/convert')
 
-app.set('views', path.resolve(__dirname, 'views'))
+app.set('views', path.join(__dirname, 'views'))
 
 app.set('view engine', 'ejs')
 
