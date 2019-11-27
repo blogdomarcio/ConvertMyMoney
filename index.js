@@ -23,7 +23,7 @@ app.get('/', async(req, res) => {
 
         const response = await axios.get('https://api.hgbrasil.com/finance')
 
-        console.log(response.data)
+        // console.log(response.data)
 
         dolar = JSON.stringify(response.data.results.currencies.USD.buy)
 
