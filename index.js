@@ -4,6 +4,8 @@ const app = express()
 
 const axios = require('axios')
 
+const request = require('request');
+
 const path = require('path')
 
 const convert = require('./lib/convert')
@@ -16,7 +18,7 @@ app.use(express.static(path.resolve(__dirname, 'public')))
 
 const port = process.env.PORT || 3000
 
-app.get('/', (req, res) => {
+app.get('/', async(req, res) => {
 
     // try {
 
@@ -27,6 +29,13 @@ app.get('/', (req, res) => {
     //     dolar = JSON.stringify(response.data.results.currencies.USD.buy)
 
     //     res.render('index', { dolar })
+
+    // const response = request.get('https://api.hgbrasil.com/finance')
+    // console.log(response)
+
+    // dolar = JSON.stringify(response.data.results.currencies.USD.buy)
+
+    // res.render('index', { dolar })
 
     // } catch {
 
