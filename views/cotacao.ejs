@@ -1,0 +1,32 @@
+<%- include('header') %>
+
+
+    <% if(error) {  %>
+        <h3>
+            <hr>
+            <%= error %>
+        </h3>
+
+
+        <% } else { %>
+
+            <h3>O Resultado da Conversão foi: </h3>
+
+
+            <div class="container text-center">
+
+                <span>U$ <%= quantidade %> na cotação de R$ <%= cotacao %>  é igual: </span>
+
+                <div class="resultado">
+
+                    R$
+                    <%= conversao %>
+
+                </div>
+
+
+            </div>
+            <% } %>
+                <hr>
+
+                <%- include('footer') %>

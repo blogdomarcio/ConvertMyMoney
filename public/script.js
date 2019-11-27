@@ -1,0 +1,10 @@
+$("#valorTransf").blur(function(){
+   
+    var valor = $(this).val();
+    
+    if(valor.match(/^\.\d{2}\b/)){
+       console.log("ok");
+    }else{
+       console.log("inválido");
+    }
+ });

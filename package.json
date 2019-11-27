@@ -1,0 +1,34 @@
+{
+    "name": "convertmymoney",
+    "version": "1.0.0",
+    "description": "System of convertion U$ to R$",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/blogdomarcio/ConvertMyMoney.git"
+    },
+    "keywords": [
+        "node",
+        "javascript",
+        "ejs",
+        "money",
+        "devpleno"
+    ],
+    "author": "Claudio Marcio @blogdomarcio",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/blogdomarcio/ConvertMyMoney/issues"
+    },
+    "homepage": "https://github.com/blogdomarcio/ConvertMyMoney#readme",
+    "dependencies": {
+        "axios": "^0.19.0",
+        "ejs": "^3.0.1",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.1"
+    }
+}

@@ -1,0 +1,51 @@
+                            body {
+                                margin: 0 auto;
+                            }
+                            
+                            .titulo {
+                                font-size: 24px;
+                            }
+                            
+                            .logo {
+                                margin: 0 auto;
+                                margin-top: 90px;
+                                margin-bottom: 20px;
+                                width: 489px;
+                            }
+                            
+                            .dolar {
+                                text-align: right;
+                                font-size: 40px;
+                                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                                padding: 10px;
+                            }
+                            
+                            .numeros {
+                                width: 306px;
+                                height: 54px;
+                                left: 567px;
+                                top: 256px;
+                                background: #FDFDFD;
+                                border: 2px solid #000000;
+                                box-sizing: border-box;
+                            }
+                            
+                            .botao {
+                                position: absolute;
+                                width: 111px;
+                                height: 29px;
+                                left: 665px;
+                                top: 426px;
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 24px;
+                                line-height: 28px;
+                                /* identical to box height */
+                                color: #000000;
+                            }
+                            
+                            .resultado {
+                                font-size: 40px;
+                                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                            }
