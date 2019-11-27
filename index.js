@@ -16,24 +16,24 @@ app.use(express.static(path.resolve(__dirname, 'public')))
 
 const port = process.env.PORT || 3000
 
-app.get('/', async(req, res) => {
+app.get('/', (req, res) => {
 
-    try {
+    // try {
 
-        const response = await axios.get('https://api.hgbrasil.com/finance')
+    //     const response = await axios.get('https://api.hgbrasil.com/finance')
 
-        // console.log(response.data)
+    //     // console.log(response.data)
 
-        dolar = JSON.stringify(response.data.results.currencies.USD.buy)
+    //     dolar = JSON.stringify(response.data.results.currencies.USD.buy)
 
-        res.render('index', { dolar })
+    //     res.render('index', { dolar })
 
-    } catch {
+    // } catch {
 
-        dolar = null
-        res.render('index', { dolar })
+    dolar = null
+    res.render('index', { dolar })
 
-    }
+    // }
 
 })
 
